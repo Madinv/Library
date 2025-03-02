@@ -1,0 +1,145 @@
+body {
+  font-family: Inter Tight, sans-serif;
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.05);
+}
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+.header {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
+  opacity: 0.8;
+  border-radius: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button-add {
+  margin: 20px 10px;
+  padding: 15px 25px;
+  background-color: #25c0c0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.button-add:hover {
+  background-color: #a52a2a;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: black;
+  opacity: 0.7;
+  margin: 10% auto;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  font-size: 1.2rem;
+  color: #f8f8ff;
+}
+.modal-title {
+  text-align: center;
+}
+#bookForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  padding: 10px;
+  margin: 10px;
+  font-weight: 600;
+}
+#bookName,
+#bookAuthor,
+#bookYear,
+#bookPages,
+#submitBookBtn {
+  padding: 10px 5rem;
+  border-radius: 10px;
+  background-color: #f8f8ff;
+}
+#submitBookBtn {
+  font-size: 1rem;
+  padding: 10px 2rem;
+  font-weight: 600;
+  background: #25c0c0;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.book-card {
+  border: 3px solid rgb(58, 54, 54);
+  margin: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 30px 60px 0 rgba(27, 31, 10, 0.08);
+  opacity: 0.8;
+}
+
+.delete-button {
+  background-color: #25c0c0;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+  }
+
+  .book-card {
+    margin: 5px;
+  }
+}
