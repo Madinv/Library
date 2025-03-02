@@ -138,8 +138,16 @@ body {
   .modal-content {
     width: 95%;
   }
-
+  .header-title-content {
+    display: none;
+  }
   .book-card {
     margin: 5px;
+  }
+  .header {
+    opacity: 0.6;
+    border-radius: 10vw;
+    display: flex;
+    flex-direction: column;
   }
 }
